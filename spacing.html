@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+        border: 1px solid (--bs-bs5);
+    }
+    .demo{
+        background-color: #cad79e;
+    }
+</style>
+<body>
+<div class="container">
+    <h2>Notation</h2>
+    <h6>對於 <code>xs</code> 使用固定格式 <code>{property}{sides}-{size}</code> 命名，對於 <code>sm、md、lg、xl</code> 和 <code>xxl</code>，使用格式 <code>{property}{sides}-{breakpoint}-{size}</code> 命名</h6>
+
+    <h6><em>property </em>設定:</h6>
+    <ul>
+    <li><code>m - margin</code></li>
+    <li><code>p - padding</code></li>
+    </ul>
+
+    <h6><em>sides </em>設定:</h6>
+    <ul>
+    <li><code>t - top</code></li>
+    <li><code>b - bottom</code></li>
+    <li><code>s</code>（start）<code> - left</code>（LTR）<code>right</code>（RTL）</li>
+    <li><code>e</code>（end）<code> - right</code>（LTR）<code>left</code>（RTL）</li>
+    <li><code>x - </code>同時設定 <code>*-left</code> 和 <code>*-right</code></li>
+    <li><code>y - </code>同時設定 <code>*-top</code> 和 <code>*-bottom</code></li>
+    </ul>
+
+    <h6><em>sizes </em>設定:</h6>
+    <ul>
+    <li><code>0 - </code><code>margin、padding</code> 為 <code>0</code></li>
+    <li><code>1 - $spacer * .25</code>（預設）</li>
+    <li><code>2 - $spacer * .5</code>（預設）</li>
+    <li><code>3 - $spacer</code>（預設）</li>
+    <li><code>4 - $spacer * 1.5</code>（預設）</li>
+    <li><code>5 - $spacer * 3</code>（預設）</li>
+    <li><code>auto - </code><code>margin</code> 為 <code>auto</code></li>
+    </ul>
+
+    <h2>基本運用</h2>
+
+    <p>為以下區塊推移不同水平距離</p>
+
+    <div class="demo d-flex">
+    <div class="box 練習"></div>
+    <div class="box"></div>
+    </div>
+
+    <p>為以下區塊推移垂直距離</p>
+
+    <div class="demo">
+    <div class="box 練習"></div>
+    <div class="box"></div>
+    </div>
+
+    <p>清除文字的向下 margin</p>
+
+    <div class="demo">
+    <p class="練習">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt distinctio sint aspernatur, nihil quam commodi consequuntur rerum sapiente ratione, neque odit optio quos eligendi atque quas, expedita rem pariatur possimus.</p>
+    </div>
+
+    <p>為按鈕加上更大的水平 padding</p>
+
+    <div class="demo">
+    <button type="button" class="btn btn-primary 練習">我是按鈕</button>
+    </div>
+
+    <h2>水平置中</h2>
+
+    <div class="demo">
+    <div class="練習" style="width: 200px; background-color: rgba(86,61,124,.15);">
+        Centered element
+    </div>
+    </div>
+</div>
+</body>
+</html>

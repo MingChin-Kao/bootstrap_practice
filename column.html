@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <title>Column</title>
+</head>
+<style>
+    .box {
+      height: 100px;
+      background-color: var(--bs-primary);
+    }
+</style>
+<body>
+    <h2>格線的基本架構 container, row, col</h2>
+
+    <div class="box"></div>
+    
+    <hr>
+    
+    <h2>外層至少要有一層 container</h2>
+    
+    <div class="練習">
+      <div class="row">
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+    <h2>寬度運用</h2>
+    
+    <h4>限制單欄寬度(預設為 12 欄)</h4>
+    
+    <div class="container">
+      <div class="row">
+        <div class="練習">
+          <div class="box"></div>
+        </div>
+        <div class="練習">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    
+    <h4>換行</h4>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+    <h4>等寬欄</h4>
+    
+    <div class="container">
+      <div class="row">
+        <div class="練習">
+          <div class="box"></div>
+        </div>
+        <div class="練習">
+          <div class="box"></div>
+        </div>
+        <div class="練習">
+          <div class="box"></div>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+        <div class="練習">
+          <div class="box"></div>
+        </div>
+        <div class="練習">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    
+    <h4>彈性寬度</h4>
+    
+    <p>加入 col-auto</p>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+        <div class="練習">
+          <div class="box">
+            這裡有一句話
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+    <h2>巢狀</h2>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+        <div class="col-6">
+          <!-- 在此加入另一個格線結構 -->
+          <!-- <div class="row">
+            <div class="col">
+              <div class="box"></div>
+            </div>
+            <div class="col">
+              <div class="box"></div>
+            </div>
+            <div class="col">
+              <div class="box"></div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+    <h2>響應式</h2>
+    
+    <p>情境：</p>
+    <ul>
+      <li>桌面版 xl：4 大欄</li>
+      <li>平板 md：3 大欄</li>
+      <li>行動版 xs：2 欄</li>
+    </ul>
+    
+    <div class="container">
+      <div class="row">
+        <div class="練習 mb-3">
+          <div class="box"></div>
+        </div>
+        <div class="練習 mb-3">
+          <div class="box"></div>
+        </div>
+        <div class="練習 mb-3">
+          <div class="box"></div>
+        </div>
+        <div class="練習 mb-3">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <p>所有包含中斷點的格線，行動版皆為滿寬</p>
+    
+    <p>情境：</p>
+    <ul>
+      <li>平板以上為 md：3 大欄</li>
+      <li>行動版 xs：單 欄</li>
+    </ul>
+    
+    <div class="container">
+      <div class="row">
+        <div class="練習">
+          <div class="box"></div>
+        </div>
+        <div class="練習">
+          <div class="box"></div>
+        </div>
+        <div class="練習">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

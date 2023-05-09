@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <title>Breakpoint</title>
+</head>
+<style>
+    .box {
+        height: 100px;
+        width: 100px;
+        background-color: var(--bs-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .demo{
+        background-color: #cad79e;
+    }
+</style>
+<body>
+<div class="container">
+    <h2>行動優先的中斷點設計</h2>
+
+    <div class="box 練習">d-none</div>
+    <div class="box 練習">d-xl-none</div>
+    <div class="box 練習">d-xxl-none</div>
+
+    <h2>技巧</h2>
+    <p>先思考行動版，再補桌面板</p>
+    <p>方塊在行動版要隱藏，桌面版(xl) 要顯示</p>
+    <ol>
+    <li>行動為隱藏（預設）</li>
+    <li>桌面版顯示</li>
+    </ol>
+
+    <div class="box"></div>
+
+
+    <h2>運用情境</h2>
+    <p>下列文字預設是靠左排列，行動版則是置中</p>
+    <div class="demo 練習">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat delectus non blanditiis hic explicabo, assumenda ducimus nemo minima doloribus dignissimos harum aperiam. Recusandae sapiente laborum, rem id maxime atque nulla.</p>
+    </div>
+</div>
+
+</body>
+</html>

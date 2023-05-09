@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+</style>
+<body>
+<div class="container">
+    <h2>範例</h2>
+
+    <p>使用 alert 加上 alert-{情境色} 製作警告框</p>
+
+    <div class="demo">
+    <div class="alert 練習" role="alert">
+        A simple primary alert—check it out!
+    </div>
+    <div class="alert 練習" role="alert">
+        A simple secondary alert—check it out!
+    </div>
+    <div class="alert 練習" role="alert">
+        A simple success alert—check it out!
+    </div>
+    <div class="alert 練習" role="alert">
+        A simple danger alert—check it out!
+    </div>
+    <div class="alert 練習" role="alert">
+        A simple warning alert—check it out!
+    </div>
+    <div class="alert 練習" role="alert">
+        A simple info alert—check it out!
+    </div>
+    <div class="alert 練習" role="alert">
+        A simple light alert—check it out!
+    </div>
+    <div class="alert 練習" role="alert">
+        A simple dark alert—check it out!
+    </div>
+    </div>
+
+    <h2>連結顏色</h2>
+
+    <p>使用 alert-link 套用警告框內的連結色彩</p>
+
+    <div class="demo">
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert with <a href="#" class="練習">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert with <a href="#" class="練習">an example link</a>. Give it a click if you like.
+    </div>
+    </div>
+
+    <h2>額外的內容</h2>
+
+    <p>alert 的樣式還包含了 .alert-heading、分隔線、段落等。</p>
+
+    <div class="demo">
+    <div class="alert alert-success" role="alert">
+        <h4 class="練習">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
+        so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+    </div>
+
+    <h2>Icons</h2>
+    <h6>You can use <a href="https://bootstrap5.hexschool.com/docs/5.0/utilities/flex/">flexbox utilities</a> and <a
+        href="https://icons.getbootstrap.com/">Bootstrap Icons</a> to create alerts with icons. </h6>
+
+    <p>使用 Flex 重新對齊以下內容</p>
+
+    <div class="demo">
+    <div class="alert alert-primary 練習" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+        class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img"
+        aria-label="Warning:">
+        <path
+            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+        <div>
+        An example alert with an icon
+        </div>
+    </div>
+    </div>
+
+    <p>快速使用 Bootstrap Icon 在 Alert 內</p>
+
+    <ul>
+    <li>載入 Bootstrap ICON CDN</li>
+    <li>加入 ICON，並使用 utilities 調整大小、間距</li>
+    </ul>
+
+    <div class="demo">
+    <div class="alert alert-primary d-flex align-items-center" role="alert">
+        練習
+        <div>
+        An example alert with an icon
+        </div>
+    </div>
+    </div>
+
+    <h2>移除</h2>
+    <ul>
+    <li>加上一個關閉按鈕 並賦予 <code>.alert-dismissible</code> 類別，使警報的右上角新增額外的 padding 和關閉按鈕。</li>
+    <li>在關閉按鈕加上 <code>data-bs-dismiss="alert"</code> 屬性來觸發 JavaScript 函式。務必使用 <code>&lt;button&gt;</code> 元素，讓它可以跨裝置正常運行。</li>
+    <li>要以動態方式移除警報，可以使用 <code>.fade</code> 和 <code>.show</code> 類別。</li>
+    </ul>
+
+    <div class="demo">
+    <div class="alert alert-warning 練習 fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" 練習 aria-label="Close"></button>
+    </div>
+    </div>
+</div>
+</body>
+</html>
